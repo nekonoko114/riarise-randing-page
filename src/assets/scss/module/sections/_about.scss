@@ -1,1 +1,48 @@
-@use '../'
+@use '../setting' as * ;
+@use '../mixin' as *;
+@use '../color' as *;
+@use '../variable' as *;
+
+.about {
+
+    &__wrapper {
+
+    }
+
+    &__title {
+
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__card {
+            margin: 0 16px;
+            padding: 10px 20px;
+        @include mq('pc') {
+            width: calc($w100 / 3  - 36px);
+        }
+        @include mq('tab') {
+            width: calc($w100 / 2  - 36px);
+        }
+        @include mq('md') {
+            width: $w100;
+
+        }
+        img {
+            
+        }
+
+        &__title {
+            margin-top: 30px;
+        }
+
+        &__text {
+
+        }
+
+
+    }
+
+}

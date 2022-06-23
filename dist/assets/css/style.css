@@ -194,4 +194,59 @@ a {
   bottom: 10%;
   left: 20%;
 }
+
+.forte {
+  background: url("../images/リアライズランディングページ背景02.jpg") no-repeat center center/contain;
+  width: 100%;
+}
+
+.forte__wrapper {
+  width: 900px;
+}
+
+.forte__subtitle {
+  font-size: 32px;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+.forte__text {
+  margin-left: 30px;
+  font-size: 25.6px;
+  font-size: 1.6rem;
+}
+
+.about__cards {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.about__card {
+  margin: 0 16px;
+  padding: 10px 20px;
+}
+.about__card__title {
+  margin-top: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .about__card {
+    width: calc(33.33333% - 36px);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .about__card {
+    width: calc(50% - 36px);
+  }
+}
+@media screen and (max-width: 767px) {
+  .about__card {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=maps/style.css.map */

@@ -1,0 +1,32 @@
+@use '../setting' as * ;
+@use '../mixin' as *;
+@use '../color' as *;
+@use '../variable' as *;
+
+.forte {
+    background: url("../images/リアライズランディングページ背景02.jpg") no-repeat center center / contain;
+    width: $w100;
+    &__wrapper {
+        width: 900px;
+    }
+
+    &__title {
+
+    }
+
+    &__textcontents {
+    
+    }
+
+    &__subtitle {
+        font-size: 2rem;
+        letter-spacing: 1.5px;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        margin-left: 30px;
+        font-size: 1.6rem;
+    }
+
+}
