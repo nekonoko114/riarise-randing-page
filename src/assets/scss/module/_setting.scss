@@ -8,7 +8,7 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
-$font-noto-sans-japanese : 'Noto Sans JP', sans-serif;
+$ff-noto-sans-japanese : 'Noto Sans JP', sans-serif;
 
 *,
 ::before,
@@ -18,16 +18,19 @@ $font-noto-sans-japanese : 'Noto Sans JP', sans-serif;
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 html,body {
     padding: 0;
     margin: 0;
-    font-size: 62.5%;
 }
 
 body {
     color :#333;
-    font-size: 16px;
-    font-family: $font-noto-sans-japanese;
+    font-size: 1.6rem;
+    font-family: $ff-noto-sans-japanese;
 }
 
 img {
@@ -66,4 +69,5 @@ ul,ol {
 
 a {
     text-decoration: none;
+    color : $font-base-color;
 }

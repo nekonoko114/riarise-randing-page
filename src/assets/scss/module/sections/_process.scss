@@ -1,0 +1,39 @@
+@use '../setting' as * ;
+@use '../mixin' as *;
+@use '../color' as *;
+@use '../variable' as *;
+
+
+.process {
+
+    &__wrapper {
+
+    }
+
+    &__title {
+
+    }
+
+    &__head {
+
+        
+        &__img {
+            
+            img {
+                
+            }
+        }
+        
+        &__wrapper {
+            
+        }
+
+        &__title {
+
+        }
+
+        &__text {
+
+        }
+    }
+}

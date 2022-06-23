@@ -35,11 +35,25 @@
         }
 
         &__title {
-            margin-top: 30px;
+            margin: 15px 0;
+            text-align: center;
+            padding-bottom: 16px;
+            position:relative;
+            &::after {
+                position: absolute;
+                content :'';
+                width: $w100;
+                height: 2px;
+                background: red;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+
+            }
         }
 
         &__text {
-
+            
         }
 
 

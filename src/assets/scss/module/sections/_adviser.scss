@@ -1,0 +1,45 @@
+@use '../setting' as * ;
+@use '../mixin' as *;
+@use '../color' as *;
+@use '../variable' as *;
+
+
+.dvisor {
+
+    &__wrapper {
+
+    }
+
+    &__title {
+
+    }
+
+    &__content {
+        margin: 80px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__left {
+
+    }
+
+    &__name {
+
+    }
+
+    &__img {
+
+        img{
+
+        }
+    }
+    
+    &__right {
+
+        p {
+
+        }
+    }
+
+}
