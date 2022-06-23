@@ -12,15 +12,19 @@
           box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 html, body {
   padding: 0;
   margin: 0;
-  font-size: 62.5%;
 }
 
 body {
   color: #333;
   font-size: 16px;
+  font-size: 1.6rem;
   font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -43,7 +47,7 @@ ul, ol {
 
 .section__title {
   font-weight: bold;
-  font-size: 76.8px;
+  font-size: 48px;
   font-size: 4.8rem;
   text-align: center;
   margin: 10px 0;
@@ -61,11 +65,18 @@ ul, ol {
 
 a {
   text-decoration: none;
+  color: #333;
+}
+
+.header {
+  position: fixed;
+  z-index: 500;
 }
 
 .header__logo {
   width: 200px;
   margin: auto 0;
+  background: transparent;
 }
 
 .header__logo img {
@@ -145,7 +156,7 @@ a {
 
 .header__nav ul li a {
   color: #333;
-  font-size: 25.6px;
+  font-size: 16px;
   font-size: 1.6rem;
   padding: 30px 0;
   display: block;
@@ -170,33 +181,35 @@ a {
 }
 
 .top {
-  margin-top: 50px;
   position: relative;
 }
 
 .top img {
-  height: 100vh;
+  height: 100%;
 }
 
 .top__text {
-  font-size: 76.8px;
+  font-size: 48px;
   font-size: 4.8rem;
 }
 
 .top__text-up {
   position: absolute;
-  top: 30%;
-  left: 20%;
+  top: 25%;
+  left: 10%;
+  -webkit-transform: translateX(-10%);
+          transform: translateX(-10%);
 }
 
 .top__text-down {
   position: absolute;
-  bottom: 10%;
-  left: 20%;
+  left: 0;
+  top: 50%;
+  padding: 20px 0 20px 20px;
 }
 
 .forte {
-  background: url("../images/reLpbg02.jpg") no-repeat center center/contain;
+  background: url(../images/reLpbg02.jpg) no-repeat center center/contain;
   width: 100%;
 }
 
@@ -205,15 +218,16 @@ a {
 }
 
 .forte__subtitle {
-  font-size: 32px;
-  font-size: 2rem;
+  font-size: 16px;
+  font-size: 1.6rem;
   letter-spacing: 1.5px;
-  margin-bottom: 10px;
+  margin: 8px 0 10px;
+  margin: 0.8rem 0 1rem;
 }
 
 .forte__text {
   margin-left: 30px;
-  font-size: 25.6px;
+  font-size: 16px;
   font-size: 1.6rem;
 }
 
@@ -232,18 +246,114 @@ a {
   padding: 10px 20px;
 }
 .about__card__title {
-  margin-top: 30px;
+  margin: 15px 0;
+  text-align: center;
+  padding-bottom: 16px;
+  position: relative;
 }
+
+.about__card__title::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: red;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.illustration {
+  background: url(../images/reLpbg04.jpg) no-repeat center center/cover;
+}
+
+.illustration__cards {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.illustration__card {
+  width: calc(33.33333% - 36px);
+  padding: 20px;
+  margin: 16px;
+}
+
+.flow {
+  background: url(../images/reLpbg01.jpg) center center/contain;
+}
+
+.flow__lists {
+  width: 800px;
+  margin: 0 auto;
+  border: 8px double rgb(76, 153, 81);
+  padding: 30px;
+}
+
+.flow__list a {
+  display: inline-block;
+  padding: 4px 2px;
+  margin-bottom: 10px;
+}
+
+.flow__content {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.flow__dl {
+  margin-top: 40px;
+}
+
+.flow__dl:nth-of-type(2n) {
+  color: rgb(0, 83, 11);
+}
+
+.flow__dl:nth-of-type(2n+1) {
+  color: rgb(51, 0, 105);
+}
+
+.flow__dl dt i {
+  margin-right: 8px;
+}
+
+.flow__dl dd {
+  color: #333;
+}
+
+.dvisor__content {
+  margin: 80px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
 @media screen and (min-width: 1200px) {
   .about__card {
     width: calc(33.33333% - 36px);
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .about__card {
     width: calc(50% - 36px);
   }
 }
+
 @media screen and (max-width: 767px) {
   .about__card {
     width: 100%;

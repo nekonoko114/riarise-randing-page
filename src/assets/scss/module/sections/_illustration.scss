@@ -1,0 +1,45 @@
+@use '../setting' as * ;
+@use '../mixin' as *;
+@use '../color' as *;
+@use '../variable' as *;
+
+.illustration {
+    background: url(#{$imgPath}reLpbg04.jpg) no-repeat center center / cover;
+
+    &__wrapper {
+
+    }
+
+    &__title {
+
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        width: calc($w100 / 3 - 36px);
+        padding: 20px;
+        margin: 16px;
+        img {
+
+        }
+
+        &__title {
+
+        }
+
+        &__text {
+
+        }
+
+
+    }
+
+
+
+    
+}
