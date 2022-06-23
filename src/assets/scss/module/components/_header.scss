@@ -1,0 +1,129 @@
+@use '../setting' as * ;
+@use '../mixin' as *;
+@use '../color' as *;
+@use '../variable' as *;
+.header {
+    &__logo {
+        width: 200px;
+        margin: auto 0;
+        img {
+            width: $w100;            
+        }
+    }
+
+    .header__btn {
+        width: 80px;
+        height: 80px;
+        top: 30px;
+        right: 30px;
+        transition: .6s;
+        position: relative;
+        position: fixed;
+        z-index: 300;
+        span {
+            position: absolute;
+            width: 100%;
+            background-color: #000;
+            height: 2px;
+            transition: ease .4s;
+            display: block;
+
+            &:nth-of-type(1) {
+                top: 0;
+            }
+            &:nth-of-type(2) {
+                top: 50%;
+            }
+            &:nth-of-type(3) {
+                bottom: 0;
+            }
+        }
+
+        &.active {
+            left: 0;
+        }
+
+        &.active > span {
+                &:nth-of-type(1) {
+                    top: 50%;
+                    transform: rotate(45deg);
+                }
+                &:nth-of-type(2) {
+
+                    display: none;
+                }
+                &:nth-of-type(3) {
+                    top: 50%;
+                    transform: rotate(-45deg);
+            }
+        }
+    }
+
+    &__nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        padding: 0;
+        width: $w100;
+        z-index: 200;
+        &.active {
+            display: block;
+        }
+        ul {
+            li {
+                text-align: center;
+                a {
+                    color : #333;
+                    font-size: 1.6rem;
+                    padding: 30px 0;
+                    display: block;
+                    transition: .3s;
+                    &:hover {
+                        text-decoration: underline;
+                        background: red;
+                        color: #fff;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    &__bg.active{
+        z-index: 100;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: $bg-opacity;
+    }
+}
+
+.top {
+    margin-top: 50px;
+    position: relative;
+    
+    img {
+        height: 100vh;   
+    }
+
+    &__text {
+        font-size: 4.8rem;
+
+        &-up {
+            // color: #fff;
+            position: absolute;
+            top: 30%;
+            left: 20%;
+        }
+
+        &-down {
+            // color: #fff;
+            position: absolute;
+            bottom:10%;
+            left: 20%;
+        }
+
+    }
+}
