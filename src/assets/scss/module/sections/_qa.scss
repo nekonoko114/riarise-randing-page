@@ -1,0 +1,31 @@
+@use '../setting' as * ;
+@use '../mixin' as *;
+@use '../color' as *;
+@use '../variable' as *;
+
+.qa {
+
+    &__wrapperv {
+
+    }
+
+    &__title {
+
+    }
+
+    dl{
+        width: 700px;
+        margin: 20px auto 0;
+        
+        
+        dt {
+            padding: 20px 4px;
+        }
+
+        dd {
+            
+            padding: 20px 4px;
+        }
+        
+    }
+}

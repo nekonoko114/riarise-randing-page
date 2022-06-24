@@ -3,9 +3,8 @@
 @use '../color' as *;
 @use '../variable' as *;
 
-
-.jobchnger {
-
+.illustration {
+    background: url(#{$imgPath}reLpbg04.jpg) no-repeat center center / cover;
 
     &__wrapper {
 
@@ -15,20 +14,32 @@
 
     }
 
-    &__content {
+    &__cards {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: wrap;
     }
 
-    &__textbox {
+    &__card {
         width: calc($w100 / 3 - 36px);
-        margin: 16px;
         padding: 20px;
-
-        p {
+        margin: 16px;
+        img {
 
         }
 
+        &__title {
+
+        }
+
+        &__text {
+
+        }
+
+
     }
+
+
+
+    
 }

@@ -1,1 +1,24 @@
+@use '../setting' as * ;
+@use '../mixin' as *;
+@use '../color' as *;
+@use '../variable' as *;
 
+.footer {
+
+    &__logo {
+
+        img {
+
+        }
+    }
+
+    &__menu {
+
+        li {
+            
+            a {
+
+            }
+        }
+    }
+}

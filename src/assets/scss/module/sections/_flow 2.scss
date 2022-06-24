@@ -1,0 +1,60 @@
+@use '../setting' as * ;
+@use '../mixin' as *;
+@use '../color' as *;
+@use '../variable' as *;
+
+
+.flow {
+    background: url(#{$imgPath}reLpbg01.jpg)  center center / contain;
+    &__wrapper {
+
+    }
+
+    &__title {
+
+    }
+
+    &__lists {
+        width: 800px;
+        margin: $marginCenter;
+        border: 8px double rgb(76, 153, 81);
+        padding: 30px;
+    }
+    &__list {
+        
+        a {
+            display: inline-block;
+            padding: 4px 2px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__content {
+        width: 800px;
+        margin: $marginCenter;
+        margin-top: 80px;
+    }
+    
+
+    &__dl {
+        margin-top: 40px;
+        &:nth-of-type(2n) {
+            color :rgb(0, 83, 11);
+        }
+        &:nth-of-type(2n+1) {
+            color :rgb(51, 0, 105);
+        }
+        dt {
+            
+            i {
+                margin-right: 8px;
+            }
+        }
+
+        dd {
+            color: $font-base-color;
+        }
+
+
+    }
+}

@@ -2,3 +2,38 @@
 @use '../mixin' as *;
 @use '../color' as *;
 @use '../variable' as *;
+
+
+.pea {
+
+
+    &__wrapper {
+
+    }
+
+    &__title {
+
+    }
+
+    &__text {
+        width: 600px;
+        margin-top: 80px;
+        margin: $marginCenter;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 60px;
+    }
+
+    &__img {
+        width: calc( $w100  / 2 );
+        text-align: center;
+        img {
+            width: 50%;
+        }
+    }
+
+}
