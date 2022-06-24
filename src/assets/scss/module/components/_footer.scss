@@ -4,20 +4,31 @@
 @use '../variable' as *;
 
 .footer {
-
+    background: rgb(92, 179, 92);
     &__logo {
-
+        
         img {
 
         }
     }
 
     &__menu {
-
+        display: flex;
+        // justify-content: space-between;
+        flex-wrap: wrap;
         li {
-            
+            width: calc($w100 / 4);
+            text-align: center;
             a {
-
+                display: inline-block;
+                color: #fff;
+                padding: 10px 4px;
+                transition: .3s;
+                &:hover {
+                    background: #fff;
+                    color: rgb(92, 179, 92);
+                    text-decoration:underline rgb(92, 179, 92);
+                }
             }
         }
     }

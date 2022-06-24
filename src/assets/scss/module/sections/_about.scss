@@ -16,19 +16,28 @@
     &__cards {
         display: flex;
         flex-wrap: wrap;
+
+        @include mq() {
+            flex-direction: column;
+        }
     }
     &__card {
-            margin: 0 16px;
-            padding: 10px 20px;
+            
         @include mq('pc') {
             width: calc($w100 / 3  - 36px);
+            margin: 0 16px;
+            padding: 10px 20px;
         }
         @include mq('tab') {
-            width: calc($w100 / 2  - 36px);
+            width: calc($w100 / 2  - 28px);
+            margin: 8px 12px;
+            padding: 10px 16px;
         }
         @include mq('md') {
             width: $w100;
-
+            margin: 0;
+            padding:10px;
+            margin-top: 0.8rem;
         }
         img {
             

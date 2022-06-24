@@ -16,6 +16,12 @@
     dl{
         width: 700px;
         margin: 20px auto 0;
+        @include mq('tab') {
+            width: $w100;
+        }
+        @include mq() {
+            width: $w100;
+        }
         
         
         dt {

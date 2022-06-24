@@ -52,11 +52,9 @@ ul, ol {
   text-align: center;
   margin: 10px 0;
 }
-
 .section__area {
   padding: 100px 0;
 }
-
 .inner {
   width: 1280px;
   max-width: 100%;
@@ -84,8 +82,8 @@ a {
 }
 
 .header .header__btn {
-  width: 80px;
-  height: 80px;
+  width: 40px;
+  height: 40px;
   top: 30px;
   right: 30px;
   -webkit-transition: 0.6s;
@@ -189,49 +187,57 @@ a {
 }
 
 .top__text {
-  font-size: 48px;
-  font-size: 4.8rem;
+  font-size: 32px;
+  font-size: 3.2rem;
+  font-weight: bold;
 }
-
 .top__text-up {
   position: absolute;
   top: 25%;
   left: 10%;
   -webkit-transform: translateX(-10%);
           transform: translateX(-10%);
+  z-index: 12;
 }
 
 .top__text-down {
   position: absolute;
-  left: 0;
+  left: 10%;
   top: 50%;
-  padding: 20px 0 20px 20px;
+  -webkit-transform: translateX(-10%);
+          transform: translateX(-10%);
+  z-index: 12;
 }
 
-.forte {
-  background: url(../images/reLpbg02.jpg) no-repeat center center/contain;
-  width: 100%;
+.top__bg {
+  width: 600px;
+  height: 300px;
+  background: rgb(233, 222, 222);
+  position: absolute;
+  top: 48%;
+  left: 0;
+  z-index: 10;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
-.forte__wrapper {
-  width: 900px;
+.top__bg1 {
+  width: 200px;
+  height: 200px;
+  background: rgb(251, 246, 146);
+}
+.top__bg2 {
+  background: rgb(112, 188, 238);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  left: 11%;
+}
+.footer {
+  background: rgb(92, 179, 92);
 }
 
-.forte__subtitle {
-  font-size: 16px;
-  font-size: 1.6rem;
-  letter-spacing: 1.5px;
-  margin: 8px 0 10px;
-  margin: 0.8rem 0 1rem;
-}
-
-.forte__text {
-  margin-left: 30px;
-  font-size: 16px;
-  font-size: 1.6rem;
-}
-
-.about__cards {
+.footer__menu {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -241,9 +247,68 @@ a {
           flex-wrap: wrap;
 }
 
-.about__card {
-  margin: 0 16px;
-  padding: 10px 20px;
+.footer__menu li {
+  width: 25%;
+  text-align: center;
+}
+
+.footer__menu li a {
+  display: inline-block;
+  color: #fff;
+  padding: 10px 4px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer__menu li a:hover {
+  background: #fff;
+  color: rgb(92, 179, 92);
+  -webkit-text-decoration: underline rgb(92, 179, 92);
+          text-decoration: underline rgb(92, 179, 92);
+}
+
+.forte {
+  background: rgb(244, 189, 101);
+  width: 100%;
+}
+
+.forte__wrapper {
+  width: 900px;
+  padding: 0 10px;
+}
+.forte__subtitle {
+  font-size: 16px;
+  font-size: 1.6rem;
+  letter-spacing: 1.5px;
+  margin-top: 8px;
+  margin-top: 0.8rem;
+}
+.forte__text {
+  margin-left: 30px;
+  font-size: 16px;
+  font-size: 1.6rem;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.forte__text::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  background: red;
+  border-radius: 10px;
+}
+.about__cards {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 .about__card__title {
   margin: 15px 0;
@@ -287,34 +352,30 @@ a {
   padding: 20px;
   margin: 16px;
 }
-
 .flow {
   background: url(../images/reLpbg01.jpg) center center/contain;
 }
 
-.flow__lists {
+.flow__wrapper {
   width: 800px;
+}
+.flow__lists {
   margin: 0 auto;
   border: 8px double rgb(76, 153, 81);
   padding: 30px;
 }
-
 .flow__list a {
   display: inline-block;
   padding: 4px 2px;
   margin-bottom: 10px;
 }
-
 .flow__content {
-  width: 800px;
   margin: 0 auto;
   margin-top: 80px;
 }
-
 .flow__dl {
   margin-top: 40px;
 }
-
 .flow__dl:nth-of-type(2n) {
   color: rgb(0, 83, 11);
 }
@@ -330,7 +391,6 @@ a {
 .flow__dl dd {
   color: #333;
 }
-
 .dvisor__content {
   margin: 80px;
   display: -webkit-box;
@@ -344,18 +404,15 @@ a {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
 }
-
 .dvisor__item {
   margin-top: 30px;
   width: calc(50% - 36px);
   margin: 16px;
   padding: 20px;
 }
-
 .dvisor__name {
   text-align: center;
 }
-
 .dvisor__img {
   width: 100%;
   margin-top: 30px;
@@ -372,22 +429,14 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
 }
-
-.jobchnger__textbox {
-  width: calc(33.33333% - 36px);
-  margin: 16px;
-  padding: 20px;
-}
-
-.pea__text {
+.pea__wrapper {
   width: 600px;
+}
+.pea__text {
   margin-top: 80px;
   margin: 0 auto;
 }
@@ -419,7 +468,6 @@ a {
   width: 700px;
   margin: 20px auto 0;
 }
-
 .qa dl dt {
   padding: 20px 4px;
 }
@@ -432,7 +480,6 @@ a {
   margin: 80px auto;
   width: 800px;
 }
-
 .contact__dl {
   margin-top: 32px;
   display: -webkit-box;
@@ -443,11 +490,9 @@ a {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
 }
-
 .contact__dl dt {
   width: 25%;
 }
-
 .contact__dl dt label {
   position: relative;
 }
@@ -471,7 +516,6 @@ a {
 .contact__dl dd {
   width: calc(100% - 200px);
 }
-
 input [type=text], input[type=text],
 input[type=tel], input[type=email] {
   -webkit-appearance: none;
@@ -525,21 +569,209 @@ textarea {
   color: #fff;
 }
 
-@media screen and (min-width: 1200px) {
-  .about__card {
-    width: calc(33.33333% - 36px);
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section__title {
+    font-size: 3.2rem;
+  }
+  .top__text {
+    font-size: 1.8rem;
+  }
+  .top__bg1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100px;
+    height: 100px;
+  }
+  .top__bg2 {
+    left: 5%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50px;
+    height: 50px;
+  }
   .about__card {
-    width: calc(50% - 36px);
+    width: calc(50% - 28px);
+    margin: 8px 12px;
+    padding: 10px 16px;
+  }
+  .illustration__card {
+    width: calc(50% - 28px);
+    margin: 8px 12px;
+    padding: 10px 16px;
+  }
+  .flow__wrapper {
+    width: 80%;
+  }
+  .flow__list a {
+    font-size: 1rem;
+  }
+  .flow__content {
+    margin-top: 40px;
+  }
+  .jobchnger__textbox {
+    width: calc(50% - 28px);
+    margin: 8px 12px;
+    padding: 10px 16px;
+  }
+  .pea__wrapper {
+    width: 100%;
+  }
+  .qa dl {
+    width: 100%;
+  }
+  .contact__content {
+    width: 100%;
+  }
+  .contact__dl {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact__dl dd {
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 767px) {
+  .section__title {
+    font-size: 1.6rem;
+  }
+  .section__area {
+    padding: 50px 0;
+  }
+  .top__text {
+    font-size: 1rem;
+  }
+  .top__bg1 {
+    width: 50px;
+    height: 50px;
+  }
+  .top__bg2 {
+    width: 25px;
+    height: 25px;
+    left: 4%;
+  }
+  .forte__wrapper {
+    width: 100%;
+  }
+  .forte__subtitle {
+    font-size: 0.8rem;
+    letter-spacing: 0;
+  }
+  .forte__text::after {
+    height: 2px;
+  }
+  .forte__text {
+    font-size: 0.8rem;
+    margin-left: 12px;
+  }
+  .about__cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .about__card {
     width: 100%;
+    margin: 0;
+    padding: 10px;
+    margin-top: 0.8rem;
+  }
+  .illustration__card {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    margin-top: 0.8rem;
+  }
+  .illustration__card__title {
+    margin-top: 10px;
+  }
+  .illustration__card__text {
+    margin-top: 10px;
+    font-size: 0.8rem;
+  }
+  .flow__wrapper {
+    width: 90%;
+  }
+  .flow__lists {
+    padding: 10px;
+  }
+  .flow__list a {
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+  }
+  .flow__content {
+    margin-top: 20px;
+  }
+  .flow__dl {
+    font-size: 0.8rem;
+    margin-top: 20px;
+  }
+  .flow__dl dd {
+    font-size: 0.8rem;
+  }
+  .dvisor__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  .dvisor__item {
+    width: 100%;
+    padding: 1px;
+  }
+  .dvisor__item p {
+    font-size: 0.8rem;
+  }
+  .dvisor__name {
+    font-size: 1rem;
+  }
+  .jobchnger__textbox {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    margin-top: 0.8rem;
+  }
+  .qa dl {
+    width: 100%;
+  }
+  .contact__content {
+    width: 100%;
+  }
+  .contact__dl dt {
+    width: 100%;
+  }
+  .contact__dl dd {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about__card {
+    width: calc(33.33333% - 36px);
+    margin: 0 16px;
+    padding: 10px 20px;
+  }
+  .illustration__card {
+    width: calc(33.33333% - 36px);
+    margin: 0 16px;
+    padding: 10px 20px;
+  }
+  .jobchnger__textbox {
+    width: calc(33.33333% - 36px);
+    margin: 0 16px;
+    padding: 10px 20px;
   }
 }
 /*# sourceMappingURL=maps/style.css.map */

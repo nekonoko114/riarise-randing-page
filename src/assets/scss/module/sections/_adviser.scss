@@ -19,6 +19,11 @@
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
+
+        @include mq {
+            flex-direction: column;
+            margin: 0;
+        }
     }
 
     &__item {
@@ -27,14 +32,25 @@
         margin: 16px;
         padding: 20px;
 
+        @include mq {
+            width: $w100;
+            padding: 1px;
+        }
+
         p {
 
+            @include mq() {
+                font-size: 0.8rem;
+            }
         }
 
     }
 
     &__name {
         text-align: center;
+         @include mq() {
+            font-size: 1rem;
+         }
     }
 
     &__img {

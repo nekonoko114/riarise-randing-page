@@ -4,10 +4,18 @@
 @use '../variable' as *;
 
 .forte {
-    background: url(#{$imgPath}reLpbg02.jpg) no-repeat center center / contain;
+    background: rgb(244, 189, 101);
     width: $w100;
+    @include mq() {
+        // background: none;
+    }
     &__wrapper {
         width: 900px;
+        padding: 0 10px;
+        
+        @include mq() {
+            width: $w100;
+        }
     }
 
     &__title {
@@ -21,12 +29,39 @@
     &__subtitle {
         font-size: 1.6rem;
         letter-spacing: 1.5px;
-        margin: .8rem 0 1rem;
+        margin-top: 0.8rem;
+        
+        @include mq() {
+            font-size: .8rem;
+            letter-spacing: 0;
+            
+        }
     }
 
     &__text {
         margin-left: 30px;
         font-size: 1.6rem;
+        position: relative;
+        padding-bottom: 4px;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 4px;
+            left: 0;
+            bottom: 0;
+            background: red;border-radius: 10px;
+
+            @include mq() {
+                height: 2px;
+            }
+        }
+        
+        @include mq() {
+            font-size: .8rem;
+            margin-left: 12px;
+        }
     }
+    
 
 }

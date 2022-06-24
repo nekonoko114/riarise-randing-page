@@ -7,7 +7,14 @@
 .flow {
     background: url(#{$imgPath}reLpbg01.jpg)  center center / contain;
     &__wrapper {
+        width: 800px;
+        @include mq('tab') {
+            width: 80%;
+        }
 
+        @include mq () {
+            width: 90%;
+        }
     }
 
     &__title {
@@ -15,10 +22,14 @@
     }
 
     &__lists {
-        width: 800px;
         margin: $marginCenter;
         border: 8px double rgb(76, 153, 81);
         padding: 30px;
+
+        @include mq {
+            padding: 10px;
+        }
+
     }
     &__list {
         
@@ -26,18 +37,38 @@
             display: inline-block;
             padding: 4px 2px;
             margin-bottom: 10px;
+
+            @include mq('tab') {
+                font-size: 1rem;
+            }
+
+            @include mq() {
+                font-size: .8rem;
+                margin-bottom: 4px;
+            }
+            
         }
     }
 
     &__content {
-        width: 800px;
         margin: $marginCenter;
         margin-top: 80px;
+        @include mq('tab') {
+            margin-top: 40px;
+        }
+
+        @include mq() {
+            margin-top: 20px;
+        }
     }
     
 
     &__dl {
         margin-top: 40px;
+        @include mq() {
+            font-size: 0.8rem;
+            margin-top: 20px;
+        }
         &:nth-of-type(2n) {
             color :rgb(0, 83, 11);
         }
@@ -53,6 +84,9 @@
 
         dd {
             color: $font-base-color;
+            @include mq() {
+                font-size: 0.8rem;
+            }
         }
 
 
