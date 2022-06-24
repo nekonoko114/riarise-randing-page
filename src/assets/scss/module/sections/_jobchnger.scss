@@ -2,3 +2,33 @@
 @use '../mixin' as *;
 @use '../color' as *;
 @use '../variable' as *;
+
+
+.jobchnger {
+
+
+    &__wrapper {
+
+    }
+
+    &__title {
+
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    &__textbox {
+        width: calc($w100 / 3 - 36px);
+        margin: 16px;
+        padding: 20px;
+
+        p {
+
+        }
+
+    }
+}
