@@ -3,9 +3,8 @@
 @use './variable' as *;
 /**
     リセットと初期設定を両方記載
+    共通パーツの指定 section__area section__title inner など
 */
-
-
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 $ff-noto-sans-japanese : 'Noto Sans JP', sans-serif;
@@ -29,8 +28,12 @@ html,body {
 
 body {
     color :#333;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-family: $ff-noto-sans-japanese;
+
+    @include mq() {
+        font-size: 1.2rem;
+    }
 }
 
 img {
@@ -59,14 +62,23 @@ ul,ol {
             font-size: 3.2rem;
     }
     @include mq() {
-        font-size: 1.6rem;
+        font-size: 2rem;
+        margin-bottom: 30px;
     }
 }
 
 .section__area {
-    padding: 100px 0;
+    padding: 100px 0;&:nth-child(2n + 1) {
+        background: lightyellow;
+    }
+    &:nth-child(2n) {
+        background:lightgreen;
+    }
     @include mq() {
-        padding: 50px 0;
+        padding: 10px 10px;
+        &:not(:first-of-type) {
+            margin-top: 60px;
+        }
     }
 }
 

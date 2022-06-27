@@ -1,50 +1,41 @@
-@use '../setting' as * ;
-@use '../mixin' as *;
-@use '../color' as *;
-@use '../variable' as *;
-
+@use "../setting" as *;
+@use "../mixin" as *;
+@use "../color" as *;
+@use "../variable" as *;
 
 .jobchnger {
+  &__wrapper {
+    background: #fff;
+    border-radius: 10px;
+  }
 
+  &__title {
+  }
 
-    &__wrapper {
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
+  &__textbox {
+    @include mq("pc") {
+      width: calc($w100 / 3 - 36px);
+      margin: 0 16px;
+      padding: 10px 20px;
+    }
+    @include mq("tab") {
+      width: calc($w100 / 2 - 28px);
+      margin: 8px 12px;
+      padding: 10px 16px;
+    }
+    @include mq("md") {
+      width: $w100;
+      margin: 0;
+      padding: 10px;
+      margin-top: 0.8rem;
     }
 
-    &__title {
-
+    p {
     }
-
-    &__content {
-        display: flex;
-        // justify-content: space-around;
-        flex-wrap: wrap;
-    }
-
-    &__textbox {
-        // width: calc($w100 / 3 - 36px);
-        // margin: 16px;
-        // padding: 20px;
-        @include mq('pc') {
-            width: calc($w100 / 3  - 36px);
-            margin: 0 16px;
-            padding: 10px 20px;
-        }
-        @include mq('tab') {
-            width: calc($w100 / 2  - 28px);
-            margin: 8px 12px;
-            padding: 10px 16px;
-        }
-        @include mq('md') {
-            width: $w100;
-            margin: 0;
-            padding:10px;
-            margin-top: 0.8rem;
-        }
-
-        p {
-
-        }
-
-    }
+  }
 }

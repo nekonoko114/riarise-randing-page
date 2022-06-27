@@ -1,40 +1,37 @@
-@use '../setting' as * ;
-@use '../mixin' as *;
-@use '../color' as *;
-@use '../variable' as *;
-
+@use "../setting" as *;
+@use "../mixin" as *;
+@use "../color" as *;
+@use "../variable" as *;
 
 .pea {
-
-
-    &__wrapper {
-        width: 600px;
-        @include mq('tab') {
-            width: 100%;
-        }
+  &__wrapper {
+    width: 600px;
+    background: #fff;
+    border-radius: 10px;
+    @include mq("tab") {
+      width: 100%;
     }
+  }
 
-    &__title {
+  &__title {
+  }
 
+  &__text {
+    margin-top: 80px;
+    margin: $marginCenter;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 60px;
+  }
+  &__img {
+    width: calc($w100 / 2);
+    text-align: center;
+    img {
+      width: 50%;
     }
-
-    &__text {
-        margin-top: 80px;
-        margin: $marginCenter;
-    }
-
-    &__content {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        margin-top: 60px;
-    }
-    &__img {
-        width: calc( $w100  / 2 );
-        text-align: center;
-        img {
-            width: 50%;
-        }
-    }
-
+  }
 }

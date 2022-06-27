@@ -1,39 +1,30 @@
-@use '../setting' as * ;
-@use '../mixin' as *;
-@use '../color' as *;
-@use '../variable' as *;
-
+@use "../setting" as *;
+@use "../mixin" as *;
+@use "../color" as *;
+@use "../variable" as *;
 
 .process {
+  &__wrapper {
+    background: #fff;
+    border-radius: 10px;
+  }
+
+  &__title {
+  }
+
+  &__head {
+    &__img {
+      img {
+      }
+    }
 
     &__wrapper {
-
     }
 
     &__title {
-
     }
 
-    &__head {
-
-        
-        &__img {
-            
-            img {
-                
-            }
-        }
-        
-        &__wrapper {
-            
-        }
-
-        &__title {
-
-        }
-
-        &__text {
-
-        }
+    &__text {
     }
+  }
 }

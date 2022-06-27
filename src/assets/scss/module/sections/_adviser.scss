@@ -1,70 +1,72 @@
-@use '../setting' as * ;
-@use '../mixin' as *;
-@use '../color' as *;
-@use '../variable' as *;
-
+@use "../setting" as *;
+@use "../mixin" as *;
+@use "../color" as *;
+@use "../variable" as *;
 
 .dvisor {
+  &__wrapper {
+    background: #fff;
+    border-radius: 10px;
+  }
 
-    &__wrapper {
+  &__title {
+  }
 
+  &__content {
+    margin: 80px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    @include mq {
+      flex-direction: column;
+      margin: 0;
+    }
+  }
+
+  &__item {
+    margin-top: 30px;
+    width: calc($w100 / 2 - 36px);
+    margin: 16px;
+    padding: 20px;
+
+    @include mq {
+      width: $w100;
+      padding: 1px;
+      margin: 0
     }
 
-    &__title {
+  
 
-    }
-
-    &__content {
-        margin: 80px;
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-
-        @include mq {
-            flex-direction: column;
-            margin: 0;
-        }
-    }
-
-    &__item {
-        margin-top: 30px;
-        width: calc( $w100 / 2 - 36px);
-        margin: 16px;
-        padding: 20px;
-
-        @include mq {
-            width: $w100;
-            padding: 1px;
-        }
-
-        p {
-
-            @include mq() {
-                font-size: 0.8rem;
-            }
-        }
-
-    }
-
-    &__name {
-        text-align: center;
-         @include mq() {
-            font-size: 1rem;
-         }
-    }
-
-    &__img {
-        width: $w100;
-        margin-top: 30px;
-        img{
-            border-radius: 999px;
-            transform : scale(-1,1)//左右反転
-        }
+    p {
+      @include mq() {
         
+      }
     }
+    &--bgc {
+      background:lightgreen;
+    }
+  }
 
-    
-    
-    
+  &__name {
+    margin-top: 40px;
+    text-align: center;
+    color: #fff;
+    @include mq() {
+      font-size: 1rem;
+      margin-top: 20px;
+    }
+  }
+  
 
+  &__img {
+    width: $w100;
+    margin-top: 30px;
+    text-align: center;
+    img {
+      width: $w75;
+      border-radius: 999px;
+      transform: scale(-1, 1); //左右反転
+    }
+  }
 }

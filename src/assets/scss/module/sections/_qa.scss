@@ -1,37 +1,119 @@
-@use '../setting' as * ;
-@use '../mixin' as *;
-@use '../color' as *;
-@use '../variable' as *;
+@use "../setting" as *;
+@use "../mixin" as *;
+@use "../color" as *;
+@use "../variable" as *;
 
 .qa {
+  &__wrapper {
+    background: #fff;
+    border-radius: 10px;
+  }
 
-    &__wrapperv {
+  &__title {
+  }
 
+  dl {
+    width: 700px;
+    margin: 20px auto 0;
+    padding: 20px 10px;
+    @include mq("tab") {
+      width: 100%;
+      padding: 10px 10px;
     }
-
-    &__title {
-
+    @include mq() {
+      width: 100%;
+      padding: 10px 10px;
+      margin: 10px auto;
+      padding: 10px 4px;
     }
-
-    dl{
-        width: 700px;
-        margin: 20px auto 0;
-        @include mq('tab') {
-            width: $w100;
-        }
+    
+    span {
+      position: relative;
+      transition:.3s;
+      &::before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 25px;
+        width: 25px;
+        height: 2px;
+        background: #000;
+        transform: translateY(-50%);
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 25px;
+        width: 25px;
+        height: 2px;
+        background: #000; 
+        transform: translateY(-50%);
         @include mq() {
-            width: $w100;
+          width: 20px;
         }
-        
-        
-        dt {
-            padding: 20px 4px;
-        }
-
-        dd {
-            
-            padding: 20px 4px;
-        }
-        
+      }
     }
+    span.active {
+      &::after {
+        transform: rotate(90deg);
+      }
+    }
+
+    dt {
+      padding: 20px 0 20px 40px;
+      background: lighten( green , 20%);
+      border: 1px solid #333;
+      position: relative;
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 25px;
+        height: 25px;
+        content : '';
+        background: url(#{$imgPath}/items/quechon.svg) no-repeat center center / contain;
+        transform: translateY(-50%);
+        z-index: 100;
+        margin-left: 8px;
+        @include mq() {
+          width: 20px;
+        }
+      }
+      @include mq() {
+        font-size: 1rem;
+      }
+      
+      &:hover {
+
+      }
+    }
+
+    dd {
+      position: relative;
+      padding: 20px 0 20px 40px;
+      background: rgba(228, 231, 221, 0.89);
+      border: 1px solid #333;
+      // display: none;
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 25px;
+        height: 25px;
+        content : '';
+        background: url(#{$imgPath}/items/answer.svg);
+        z-index: 100;
+        transform: translateY(-50%);
+        margin-left: 8px;
+      }
+      @include mq() {
+        font-size: 1rem;
+      }
+    }
+    dd.is-active {
+      display: block;
+    }
+  }
 }

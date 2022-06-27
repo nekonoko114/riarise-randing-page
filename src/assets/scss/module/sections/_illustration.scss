@@ -1,68 +1,59 @@
-@use '../setting' as * ;
-@use '../mixin' as *;
-@use '../color' as *;
-@use '../variable' as *;
+@use "../setting" as *;
+@use "../mixin" as *;
+@use "../color" as *;
+@use "../variable" as *;
 
 .illustration {
-    background: url(#{$imgPath}reLpbg04.jpg) no-repeat center center / cover;
+  background: url(#{$imgPath}reLpbg04.jpg) no-repeat center center / cover;
 
-    &__wrapper {
+  &__wrapper {
+    border-radius: 10px;
+  }
 
+  &__title {
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    width: calc($w100 / 3 - 36px);
+    padding: 20px;
+    margin: 16px;
+
+    @include mq("pc") {
+      width: calc($w100 / 3 - 36px);
+      margin: 0 16px;
+      padding: 10px 20px;
+    }
+    @include mq("tab") {
+      width: calc($w100 / 2 - 28px);
+      margin: 8px 12px;
+      padding: 10px 16px;
+    }
+    @include mq("md") {
+      width: $w100;
+      margin: 0;
+      padding: 10px;
+      margin-top: 0.8rem;
+    }
+    img {
     }
 
     &__title {
-
+      @include mq() {
+        margin-top: 10px;
+      }
     }
 
-    &__cards {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+    &__text {
+      @include mq() {
+        margin-top: 10px;
+        
+      }
     }
-
-    &__card {
-        width: calc($w100 / 3 - 36px);
-        padding: 20px;
-        margin: 16px;
-
-        @include mq('pc') {
-            width: calc($w100 / 3  - 36px);
-            margin: 0 16px;
-            padding: 10px 20px;
-        }
-        @include mq('tab') {
-            width: calc($w100 / 2  - 28px);
-            margin: 8px 12px;
-            padding: 10px 16px;
-        }
-        @include mq('md') {
-            width: $w100;
-            margin: 0;
-            padding:10px;
-            margin-top: 0.8rem;
-        }
-        img {
-
-        }
-
-        &__title {
-            @include mq() {
-                margin-top: 10px;
-            }
-        }
-
-        &__text {
-
-            @include mq() {
-                margin-top: 10px;
-                font-size: 0.8rem;
-            }
-        }
-
-
-    }
-
-
-
-    
+  }
 }
