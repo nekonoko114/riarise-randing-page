@@ -11,7 +11,7 @@ $breakpoints: (
   }
 }
 
-@mixin btn($height: 40px, $width: 320px, $color: green) {
+@mixin btn($height: 80px, $width: 320px, $color: green) {
   width: $width;
   height: $height;
   background: #fff;
@@ -19,6 +19,26 @@ $breakpoints: (
   display: inline-block;
   border-radius: 10px;
   transition: 0.3s;
+  cursor: pointer;
+  @include mq() {
+    width: 150px;
+  }
+  &:hover {
+    background: $color;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+}
+
+@mixin contactBtn($height: 30px,$width:24px,$color:green) {
+  width: $width;
+  height: $height;
+  background: #fff;
+  border: 2px solid $color;
+  display: inline-block;
+  border-radius: 10px;
+  transition: 0.3s;
+  color: #333;
   cursor: pointer;
   @include mq() {
     width: 150px;

@@ -5,6 +5,7 @@
 @use './components/header';
 @use './components/footer';
 
+//sectionエリア内のスタイル各自それぞれのスタイル
 @use './sections/forte';
 @use './sections/about';
 @use './sections/illustration';
@@ -14,4 +15,8 @@
 @use './sections/jobchnger';
 @use './sections/pea';
 @use './sections/qa';
+
+//お問い合わせに関するスタイル共通部分多し
 @use './sections/contact';
+@use './sections/confirm';
+@use './sections/complete';

@@ -8,13 +8,16 @@
   &__wrapper {
     border-radius: 10px;
     background: #fff;
+    padding: 40px;
     @include mq("tab") {
       width: 80%;
     }
 
     @include mq() {
       width: 90%;
+      padding: 20px;
     }
+    
   }
 
   &__title {

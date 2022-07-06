@@ -7,13 +7,17 @@
   &__wrapper {
     background: #fff;
     border-radius: 10px;
+    padding: 40px;
+    @include mq() {
+      padding: 20px;
+    }
   }
 
   &__title {
   }
 
   dl {
-    width: 700px;
+    // width: 700px;
     margin: 20px auto 0;
     padding: 20px 10px;
     @include mq("tab") {
@@ -27,44 +31,53 @@
       padding: 10px 4px;
     }
     
-    span {
-      position: relative;
-      transition:.3s;
-      &::before {
-        position: absolute;
-        content: "";
-        top: 50%;
-        left: 25px;
-        width: 25px;
-        height: 2px;
-        background: #000;
-        transform: translateY(-50%);
-      }
-      &::after {
-        position: absolute;
-        content: "";
-        top: 50%;
-        left: 25px;
-        width: 25px;
-        height: 2px;
-        background: #000; 
-        transform: translateY(-50%);
-        @include mq() {
-          width: 20px;
-        }
-      }
-    }
-    span.active {
-      &::after {
-        transform: rotate(90deg);
-      }
-    }
+    
 
     dt {
-      padding: 20px 0 20px 40px;
+      padding: 20px 0 20px 60px;
       background: lighten( green , 20%);
       border: 1px solid #333;
       position: relative;
+      font-weight: bold;
+      font-size: 1.4rem;
+      letter-spacing: 1px;
+      span {
+        right: 0;
+        position: relative;
+        transition:.6s;
+        &::before {
+          position: absolute;
+          content: "";
+          top: 50%;
+          left: 25px;
+          width: 25px;
+          height: 2px;
+          background: #000;
+          transform: translateY(-50%);
+          @include mq() {
+            width: 15px;
+          }
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          top: 50%;
+          left: 25px;
+          width: 25px;
+          height: 2px;
+          background: #000; 
+          transform: translateY(-50%);
+          transform: rotate(90deg);
+          @include mq() {
+            width: 15px;
+          }
+        }
+      }
+      span.active {
+        &::after {
+          transform: rotate(0);
+        }
+      }
       &::before {
         position: absolute;
         top: 50%;
@@ -82,6 +95,7 @@
       }
       @include mq() {
         font-size: 1rem;
+        padding: 10px 0 10px 40px;
       }
       
       &:hover {
@@ -91,11 +105,11 @@
 
     dd {
       position: relative;
-      padding: 20px 0 20px 40px;
+      padding: 20px 0 20px 60px;
       background: rgba(228, 231, 221, 0.89);
       border: 1px solid #333;
-      // display: none;
-
+      display: none;
+      font-size: 1.4rem;
       &::before {
         position: absolute;
         top: 50%;
@@ -110,10 +124,22 @@
       }
       @include mq() {
         font-size: 1rem;
+        padding: 10px 0 10px 40px;
       }
     }
     dd.is-active {
       display: block;
+      animation: anima .3s ease-in;
+      @keyframes anima {
+        
+        0% {
+          
+        }
+
+        100% {  
+          
+        }
+      }
     }
   }
 }

@@ -11,6 +11,10 @@
     @include mq("tab") {
       width: 100%;
     }
+    padding: 40px;
+    @include mq() {
+      padding: 20px;
+    }
   }
 
   &__title {
@@ -19,13 +23,22 @@
   &__text {
     margin-top: 80px;
     margin: $marginCenter;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
   }
 
   &__content {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 60px;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    @include mq() {
+      margin-top: 3rem;
+    }
+    
+    
   }
   &__img {
     width: calc($w100 / 2);

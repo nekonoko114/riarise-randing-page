@@ -1,0 +1,55 @@
+@use "../setting" as *;
+@use "../mixin" as *;
+@use "../color" as *;
+@use "../variable" as *;
+
+.complete {
+  &__title {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 0 999px 0 999px;
+  }
+
+  &__wrapper {
+    margin-top: 40px;
+    border: 0.5px solid #333;
+    padding: 40px;
+    background: #fff;
+  }
+
+  &__card {
+    padding: 60px;
+    background: lightgoldenrodyellow;
+
+    &__title {
+
+    }
+  
+    &__text {
+      margin-top: 30px;
+    }
+    
+  }
+
+  
+  &__btn {
+    margin-top: 30px;
+    text-align: center;
+    
+    a {
+        background: red;
+        @include btn();
+        width: 400px;
+        height: 120px;
+        background: lightblue;
+        border: 3px solid #fff;
+        display: inline-block;
+        line-height: 110px;
+        font-weight: bold;
+        color: #fff;
+      }
+  }
+
+  
+}

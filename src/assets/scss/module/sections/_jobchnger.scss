@@ -7,6 +7,10 @@
   &__wrapper {
     background: #fff;
     border-radius: 10px;
+    padding: 40px;
+    @include mq() {
+      padding: 20px;
+    }
   }
 
   &__title {
@@ -15,6 +19,7 @@
   &__content {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 80px;
   }
 
   &__textbox {
@@ -34,8 +39,19 @@
       padding: 10px;
       margin-top: 0.8rem;
     }
+    
 
     p {
+    }
+  }
+  &__subtitle {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    background: $color-main;
+    border-radius: 0 999px 0 0;
+
+    @include mq() {
+      font-size: 1.6rem;
     }
   }
 }

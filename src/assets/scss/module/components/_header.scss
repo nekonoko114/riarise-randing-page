@@ -97,6 +97,9 @@
           padding: 30px 0;
           display: block;
           transition: 0.3s;
+          @include mq() {
+            padding: 10px 0;
+          }
           &:hover {
             text-decoration: underline;
             background: red;
@@ -144,6 +147,21 @@
       left: 10%;
       transform: translateX(-10%);
       z-index: 12;
+      animation: top-text-up 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+      @keyframes top-text-up {
+        0% {
+          letter-spacing: -0.5em;
+          transform: translateZ(-700px) translateY(-500px);
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          transform: translateZ(0) translateY(0);
+          opacity: 1;
+        }
+      }
     }
 
     &-down {
@@ -153,6 +171,21 @@
       top: 50%;
       transform: translateX(-10%);
       z-index: 12;
+      animation: top-text-down 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+      @keyframes  top-text-down{
+        0% {
+          letter-spacing: 1em;
+          transform: translateZ(400px) translateY(300px);
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          transform: translateZ(0) translateY(0);
+          opacity: 1;
+        }
+      }
     }
   }
 

@@ -7,6 +7,10 @@
   &__wrapper {
     background: #fff;
     border-radius: 10px;
+    padding: 40px;
+    @include mq() {
+      padding: 20px;
+    }
   }
 
   &__title {
@@ -25,6 +29,10 @@
     }
 
     &__text {
+      margin-top: 6rem;
+      @include mq() {
+        margin-top: 2rem;
+      }
     }
   }
 }

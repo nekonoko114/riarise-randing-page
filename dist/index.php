@@ -1,46 +1,6 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/cd7cddf20f.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="shortcut icon"
-      href="./assets/images/items/reLpicon.jpeg"
-      type="image/x-icon"
-    />
-    <title>ランディングページ枠組み</title>
-  </head>
-  <body>
-    <header class="header">
-      <!-- <h1 class="header__logo"><img src="./assets/images/logo/riarise.jpeg" alt="リアライズロゴ"></h1> -->
-      <div class="header__btn" id="navBtn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <nav class="header__nav" id="navMenu">
-        <ul>
-          <li><a href="#sec1">当社の特徴</a></li>
-          <li><a href="#sec2">about</a></li>
-          <li><a href="#sec3">紹介事例</a></li>
-          <li><a href="#sec4">流れ</a></li>
-          <li><a href="#sec5">process</a></li>
-          <li><a href="#sec6">転職者様の声</a></li>
-          <li><a href="#sec7">有料職業紹介について</a></li>
-          <li><a href="#sec8">面談担当者のコメント</a></li>
-          <li><a href="#sec9">Q&A</a></li>
-          <li><a href="./contact.php">お問い合わせ</a></li>
-        </ul>
-      </nav>
 
-      <div class="header__bg" id="navBg"></div>
-    </header>
+<?php require_once('./common/header.php');?>
+
 <div class="top">
       <img src="./assets/images/reLpTop.jpg" alt="前向きな青年" />
       <p class="top__text top__text-up">
@@ -127,9 +87,6 @@
           </div>
         </div>
       </div>
-      <div class="contact__btn">
-        <a class="contact__link" href="./contact.php">問い合わせる</a>
-      </div>
     </section>
 
     <section class="section__area illustration" id="sec3">
@@ -206,9 +163,6 @@
           </div>
         </div>
       </div>
-      <div class="contact__btn">
-        <a class="contact__link" href="./contact.php">問い合わせる</a>
-      </div>
     </section>
 
     <section class="section__area process" id="sec4">
@@ -223,10 +177,13 @@
           <div class="process__head__wrapper inner">
             <h3 class="process__head__title"></h3>
             <p class="process__head__text">
-              就職活動において事前準備は非常に大切なものになっており、希望職種がどういった仕事内容で求職者自身の強みを活かせる方法を企業にアプローチする必要があります。
-              企業様もコロナ渦の中でリストラをした企業も少なからずあり、有能な人材を探していると言っても過言ではありません。
-              弊社ではそういった今作の情勢や市場感なども事前調査を行い求職者様が有利に就職活動ができるように専任のアドバイザーが付き、最大限後押しができる環境をご用意しております。
-              ここではそういった流れなどをご紹介をさせていただき求職者様に理解を深めていただければと思います。
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
         </div>
@@ -260,11 +217,13 @@
               >①弊社面接練習担当との打合せ
             </dt>
             <dd>
-              現状をまずお伺いさせていただきます。<br>
-              転職を考えている時期や動機,
-              、夢などをお伺いさせていただき今後どのように活動していきたいか。求職者様に寄り添って今後の方向性について熱く語って行きます。<br>
-              将来の方向性についてお話をさせていただくことで、求職者様が思っていた職種と違う職種でその方にあったお仕事をご紹介できる可能性があるため弊社ではこの時間を大事にしております。
-
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
             </dd>
           </dl>
           <dl class="flow__dl flow__dl--n2" id="flow2">
@@ -273,11 +232,13 @@
               >②転職者様の希望の職種のヒアリング
             </dt>
             <dd>
-              たくさんお話をさせて頂いた後に希望の職種についてお伺いさせていただきます。<br>
-              ここでは包み隠さず希望を話していただき次官となります。<br>
-              遠慮したり、自分ではできないかもといった気持ちはあまり良くありません。<br>
-              しっかりと自身の気持ちをお伝えください。<br>
-              ここでしっかりと方向性を固めて行く時間となり、ご紹介させていただく企業やその後の書類作成についても非常に大事なポイントになってきます。
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
             </dd>
           </dl>
           <dl class="flow__dl flow__dl--n3" id="flow3">
@@ -286,9 +247,13 @@
               >③弊社での履歴書・職務経歴書の作成
             </dt>
             <dd>
-              求職者様がご自身で誤用したした「履歴書・職務経歴書」などを拝見させていただき、取捨選択を行い求職者差mの長所が活かせられる「ベストな履歴書・職務経歴書」をお作りします。<br>もちろん、求職者様がご用意していただいている書類をそのまま使わせていただくこともございます。しかし、企業によってはその内容では魅力的に見えなかったり、求職者様の実績状況がうまく伝わらず「見える化」できていないこともあるかもしれません。
-              そのため、弊社では作り変えが必要であると判断した際にはこれまでにお伺いしたことと＋αでヒアリングを実施し企業様から「魅力的」と思える書類作成をいたします。
-              
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
             </dd>
           </dl>
           <dl class="flow__dl flow__dl--n4" id="flow4">
@@ -297,9 +262,13 @@
               >④当日の面接練習(どのような会社か弊社でマーケティングし良く聞かれることは抜粋し練習)
             </dt>
             <dd>
-              ここでは就職活動を初めて、企業様へ応募した後のお話をいたします。<br>
-              応募していただいた企業様を弊社で調査した内容と照らし合わせて面接対策を実施させていただきます。
-              求職者様の強みと企業の求める人材との差分を考慮した上での面接対策を実施させていただきます。しっかりと練習していただいて面接官の心をつかめるように私どもも協力させていただきます。
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
             </dd>
           </dl>
           <dl class="flow__dl flow__dl--n5" id="flow5">
@@ -308,15 +277,16 @@
               >⑤当日面接
             </dt>
             <dd>
-              当日の面接の前に現在の状況とリラックスして面接対策と同じようにできるかなどヒアリングさせていただきます。<br>
-              どうしても不安で仕方ないときもあるかと思いますが、その際には希望者には面接対策の再実施を行い本来の自分で面接ができるようにお手伝いいたします。<br>
-              面接本番は一番ベストの形で望んでいただきたいのでしっかりと前日は睡眠を取り急速を撮って頂いた上で望んでください。
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
             </dd>
           </dl>
         </div>
-      </div>
-      <div class="contact__btn">
-        <a class="contact__link" href="./contact.php">問い合わせる</a>
       </div>
     </section>
 
@@ -345,9 +315,6 @@
           </div>
         </div>
       </div>
-      <div class="contact__btn">
-        <a class="contact__link" href="./contact.php">問い合わせる</a>
-      </div>
     </section>
 
     <section class="section__area jobchnger" id="sec7">
@@ -368,7 +335,7 @@
           </div>
           <div class="jobchnger__textbox">
             <h3 class="jobchnger__subtitle">
-              希望職種で内定がもらえた
+              望んでいた環境で内定をいただけました
             </h3>
             <p>
               エンジニアを希望していた私ですが、コロナのこともありなかなか転職活動がうまくいっていなかったのですが、
@@ -390,9 +357,6 @@
             </p>
           </div>
         </div>
-      </div>
-      <div class="contact__btn">
-        <a class="contact__link" href="./contact.php">問い合わせる</a>
       </div>
     </section>
 
@@ -425,70 +389,11 @@
           </div>
         </div>
         <div class="contact__btn">
-          <a class="contact__link" href="./contact.php">問い合わせる</a>
-        </div>
+      <a class="contact__link" href="./contact.php">問い合わせして見る</a>
+    </div>
       </div>
       
     </section>
 
-    <section class="section__area qa" id="sec9">
-      <div class="qa__wrapper inner">
-        <h2 class="qa__title section__title">Q&A<span>Help</span></h2>
-        <dl class="qa__lists">
-          <dt class="qa js-qa">有料職業業紹介てなに？<span></span></dt>
-          <dd class="is-active">
-            有料職業紹介とは求職者様に求人情報などをご紹介させていただくものでございます。
-          </dd>
-        </dl>
-        <dl class="qa__lists">
-          <dt class="qa js-qa">料金は発生するのですか？？<span></span></dt>
-          <dd>
-            求職者様へのお仕事紹介で料金が発生することはなく無料でご利用いただけるようになっております。
-            就職が決まったからと言って弊社から求職者様に対して請求を行うことはございません。
-          </dd>
-        </dl>
-        <dl class="qa__lists">
-          <dt class="qa js-qa">転職などほとんどしたことがなく不安なのですが私でも大丈夫でしょうか？？<span></span></dt>
-          <dd>
-            弊社では履歴書、職務経歴書などの作成支援も実施しております。
-            その上で、企業様の特徴に合わせた面接や希望職種の市場感を元に面接対策なども行わせていただきますのでご安心ください。
-          </dd>
-        </dl>
-        <dl class="qa__lists">
-          <dt class="qa js-qa">どんな仕事があるの<span></span></dt>
-          <dd class="">
-            ご紹介で着る案件数は7000社ほど職種も豊富です。<br>
-            エンジニアや、営業、事務職、飲食、接客と豊富に取り揃えております。<br>
-            是非一度保相談くださいませ。
-          </dd>
-        </dl>
-      </div>
-      <div class="contact__btn">
-        <a class="contact__link" href="./contact.php">問い合わせる</a>
-      </div>
-    </section>
-    <div class="topPage"></div>
-    <footer class="footer">
-      <ul class="footer__menu">
-        <li><a href="#sec1">当社の特徴</a></li>
-        <li><a href="#sec2">about</a></li>
-        <li><a href="#sec3">紹介事例</a></li>
-        <li><a href="#sec4">流れ</a></li>
-        <li><a href="#sec5">process</a></li>
-        <li><a href="#sec6">転職者様の声</a></li>
-        <li><a href="#sec7">有料職業紹介について</a></li>
-        <li><a href="#sec8">面談担当者のコメント</a></li>
-        <li><a href="#sec9">Q&A</a></li>
-        <li><a href="#sec10">お問い合わせ</a></li>
-      </ul>
-      <p class="copyright">&copy;Rearise - Company .LTD -リアライズ株式会社-</p>
-    </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./assets/js/base.js"></script>
-    <script src="./assets/js/varidation.js"></script>
-  </body>
-</html>
-
     
-    
+    <?php require_once('./common/footer.php');?>
