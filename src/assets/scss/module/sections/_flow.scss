@@ -25,7 +25,8 @@
 
   &__lists {
     margin: $marginCenter;
-    border: 8px double rgb(76, 153, 81);
+    // border: 8px double rgb(76, 153, 81);
+    border : 8px double  $color-bg-base;
     padding: 30px;
 
     @include mq {

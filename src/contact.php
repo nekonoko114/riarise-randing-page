@@ -1,9 +1,7 @@
-<?php 
-require_once('./common/header.php');
-require_once('./varidate.php');
-?>
 <?php
 session_start();
+require_once('./common/header.php');
+require_once('./varidate.php');
 $error = [];
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    $post = filter_input_array(INPUT_POST, $_POST);
@@ -29,9 +27,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     if (count($error) === 0) {
-        // エラーがないので確認画面に移動
         $_SESSION['form'] = $post;
-        header('Location:confirm.php');
+header('Location:confirm.php');
         exit();
     }
 } else {

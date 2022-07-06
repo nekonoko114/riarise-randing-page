@@ -1,12 +1,7 @@
-<?php 
+<?php
 require_once('./common/header.php');
 require_once('./varidate.php');
 ?>
-
-
-<!-- ビュー
-================================================================================================ -->
-
 <section class="section__area complete">
     <h2 class="section__title complete__title">お問い合わせ 送信完了</h2>
     <div class="complete__wrapper inner">

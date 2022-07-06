@@ -62,7 +62,8 @@ ul,ol {
     position:relative;
     padding-bottom: 40px;
     border-radius: 999px 999px 0 0;
-    background: lightblue;
+    // background: lightblue;
+    background: $color-bg-base;
 
     &:nth-child(2n) {
         border-radius: 0 999px  0 999px ;
@@ -112,10 +113,10 @@ ul,ol {
 .section__area {
     padding: 100px 0;
     &:nth-child(2n + 1) {
-        background: lightyellow;
+        background:url(#{$imgPath}reLpbg05.jpg) no-repeat center center / cover;
     }
     &:nth-child(2n) {
-        background:lightgreen;
+        background:url(#{$imgPath}reLpbg10.jpg) no-repeat center center / cover;
     }
     @include mq() {
         padding: 10px 10px;

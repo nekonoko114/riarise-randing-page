@@ -56,7 +56,7 @@ ul, ol {
   position: relative;
   padding-bottom: 40px;
   border-radius: 999px 999px 0 0;
-  background: lightblue;
+  background: #00ced1;
 }
 
 .section__title:nth-child(2n) {
@@ -90,11 +90,11 @@ ul, ol {
 }
 
 .section__area:nth-child(2n+1) {
-  background: lightyellow;
+  background: url(../images/reLpbg05.jpg) no-repeat center center/cover;
 }
 
 .section__area:nth-child(2n) {
-  background: lightgreen;
+  background: url(../images/reLpbg10.jpg) no-repeat center center/cover;
 }
 .inner {
   max-width: 100%;
@@ -219,7 +219,7 @@ a {
   color: #fff;
   font-size: 24px;
   font-size: 2.4rem;
-  padding: 30px 0;
+  padding: 18px 0;
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -259,7 +259,7 @@ a {
 .top__text-up {
   position: absolute;
   top: 25%;
-  left: 10%;
+  left: 15%;
   -webkit-transform: translateX(-10%);
           transform: translateX(-10%);
   z-index: 12;
@@ -302,7 +302,7 @@ a {
 }
 .top__text-down {
   position: absolute;
-  left: 10%;
+  left: 15%;
   top: 50%;
   -webkit-transform: translateX(-10%);
           transform: translateX(-10%);
@@ -377,7 +377,7 @@ a {
   right: 40px;
 }
 .footer {
-  background: rgb(92, 179, 92);
+  background: #00ced1;
 }
 
 .footer__menu {
@@ -576,7 +576,7 @@ a {
 }
 .flow__lists {
   margin: 0 auto;
-  border: 8px double rgb(76, 153, 81);
+  border: 8px double #00ced1;
   padding: 30px;
 }
 .flow__list a {
@@ -670,11 +670,16 @@ a {
           flex-wrap: wrap;
   margin-top: 80px;
 }
+
+.jobchnger__textbox {
+  -webkit-box-shadow: 0px 2px 6px rgba(126, 126, 126, .4941176471);
+          box-shadow: 0px 2px 6px rgba(126, 126, 126, .4941176471);
+}
 .jobchnger__subtitle {
   font-size: 24px;
   font-size: 2.4rem;
   margin-bottom: 20px;
-  background: #00e600;
+  background: #00ced1;
   border-radius: 0 999px 0 0;
 }
 .pea__wrapper {
@@ -727,13 +732,15 @@ a {
 }
 .qa dl dt {
   padding: 20px 0 20px 60px;
-  background: #00e600;
+  background: #00ced1;
   border: 1px solid #333;
   position: relative;
   font-weight: bold;
   font-size: 14px;
   font-size: 1.4rem;
   letter-spacing: 1px;
+  -webkit-box-shadow: 0px 2px 6px rgba(126, 126, 126, .4941176471);
+          box-shadow: 0px 2px 6px rgba(126, 126, 126, .4941176471);
 }
 
 .qa dl dt span {

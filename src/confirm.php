@@ -4,7 +4,6 @@ require_once('./varidate.php');
 ?>
 <?php
 session_start();
-var_dump($_SESSION['form']);
 // 入力画面からのアクセスでなければ、戻す
 if (!isset($_SESSION['form'])) {
     header('Location:contact.php');

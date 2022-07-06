@@ -20,7 +20,8 @@
 }
 
 .footer {
-  background: rgb(92, 179, 92);
+  // background: rgb(92, 179, 92);
+  background: $color-bg-base;
   &__logo {
     img {
     }
