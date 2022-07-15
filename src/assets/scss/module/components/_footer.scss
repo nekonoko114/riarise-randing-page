@@ -3,13 +3,56 @@
 @use "../color" as *;
 @use "../variable" as *;
 
+
+.ad {
+
+  &__wrapper {
+    background: #fff transparent;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    z-index: 200;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .btn {
+    text-align: center;
+    &:not(:first-child) {
+      // margin-left: 30px;
+    }
+    a {
+      @include btn($width:250px,$height :80px ,$color:red);
+      line-height: 80px;
+      background:red;
+      color:#fff;
+      box-shadow: 3px 9px 12px 4px #7e7e7e7e;
+      &:hover {
+        background: #fff;
+        color:red;
+        border: 2px solid red;
+      }
+
+      @include mq() {
+        width: 150px;
+        height: 60px;
+        line-height: 60px;
+      }
+    }
+  }
+}
+
 .topPage {
   position: fixed;
   background: url(#{$imgPath}items/angle-double-up.svg) no-repeat center center / contain;
-  width: 80px;
-  height: 80px;
-  bottom: 100px;
-  right: 40px;
+  width: 40px;
+  height: 40px;
+  bottom: 60px;
+  right: 60px;
+  z-index: 200;
 
   @include mq() {
     width: 40px;
@@ -22,6 +65,7 @@
 .footer {
   // background: rgb(92, 179, 92);
   background: $color-bg-base;
+  padding: 20px 10px;
   &__logo {
     img {
     }
@@ -48,7 +92,7 @@
         padding: 10px 4px;
         transition: 0.3s;
         @include mq() {
-         font-size: .1rem;
+         font-size: 1rem;
         }
         &:hover {
           background: #fff;
@@ -69,3 +113,5 @@
     }
   }
 }
+
+

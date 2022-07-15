@@ -1,9 +1,5 @@
-<a href="https://www.secure-cloud.jp/sf/1656310800HTgumbAO"
-      >お問い合わせをする</a
-    >
     <div class="topPage"></div>
     <footer class="footer">
-      <div class="footer__logo"><img src="" alt="代替えテキスト" /></div>
       <ul class="footer__menu">
         <li><a href="#sec1">当社の特徴</a></li>
         <li><a href="#sec2">about</a></li>

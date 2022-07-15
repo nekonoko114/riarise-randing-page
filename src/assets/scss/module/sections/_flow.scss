@@ -14,10 +14,9 @@
     }
 
     @include mq() {
-      width: 90%;
+      width: 100%;
       padding: 20px;
     }
-    
   }
 
   &__title {
@@ -26,7 +25,7 @@
   &__lists {
     margin: $marginCenter;
     // border: 8px double rgb(76, 153, 81);
-    border : 8px double  $color-bg-base;
+    border: 8px double $color-bg-base;
     padding: 30px;
 
     @include mq {
@@ -38,13 +37,15 @@
       display: inline-block;
       padding: 4px 2px;
       margin-bottom: 10px;
+      background:linear-gradient(transparent 60%, #ff6 60%);
+      transform: translateY(-4px);
+      transition: background .3s linear 0s infinite;
 
       @include mq("tab") {
         font-size: 1rem;
       }
 
       @include mq() {
-        
         margin-bottom: 4px;
       }
     }
@@ -53,6 +54,8 @@
   &__content {
     margin: $marginCenter;
     margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
     @include mq("tab") {
       margin-top: 40px;
     }
@@ -64,27 +67,63 @@
 
   &__dl {
     margin-top: 40px;
-    @include mq() {
-      
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0px 3px 6px #7e7e7e7e;
+
+    @include mq("tab") {
       margin-top: 20px;
+      flex-direction: column;
+    }
+    @include mq() {
+      margin-top: 20px;
+      flex-direction: column;
+      margin-top: 40px;
     }
     &:nth-of-type(2n) {
-      color: rgb(0, 83, 11);
+      flex-direction: row-reverse;
+      background: url(#{$imgPath}reLpbg05.jpg) no-repeat center center / cover;
+      @include mq("tab") {
+        flex-direction: column;
+      }
+      @include mq() {
+        flex-direction: column;
+      }
     }
     &:nth-of-type(2n + 1) {
-      color: rgb(51, 0, 105);
+      background: url(#{$imgPath}reLpbg08.jpg) no-repeat center center / cover;
     }
     dt {
-      i {
-        margin-right: 8px;
+      width: 40%;
+      img {
+        width: 100%;
+        vertical-align: middle;
+      }
+      @include mq() {
+        width: 100%;
       }
     }
 
     dd {
+      padding: 15px;
+      width: 60%;
       color: $font-base-color;
+
+      i {
+        margin-right: 8px;
+      }
+
+      p {
+        margin-top: 20px;
+      }
+
       @include mq() {
-        
+        width: 100%;
       }
     }
+  }
+  i {
+    margin-left: 5%;
   }
 }

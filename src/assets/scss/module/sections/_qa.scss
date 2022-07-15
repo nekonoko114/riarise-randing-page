@@ -36,6 +36,7 @@
     dt {
       padding: 20px 0 20px 60px;
       // background: lighten( green , 20%);
+      color: #fff;
       background: $color-bg-base;
       border: 1px solid #333;
       position: relative;
@@ -112,6 +113,7 @@
       border: 1px solid #333;
       display: none;
       font-size: 1.4rem;
+      
       &::before {
         position: absolute;
         top: 50%;
@@ -145,3 +147,6 @@
     }
   }
 }
+
+
+

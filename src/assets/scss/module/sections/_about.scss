@@ -31,7 +31,7 @@
     &::after {
       position: absolute;
       content: "";
-      background: url(#{$imgPath}});
+      background: url(#{$imgPath});
     }
     @include mq("pc") {
       width: calc($w100 / 3 - 36px);
@@ -70,6 +70,16 @@
     }
 
     &__text {
+    }
+
+    i {
+      position:absolute;
+      right : -10%;
+      top:50%;
+
+      @include mq() {
+        display:none;
+      }
     }
   }
 }

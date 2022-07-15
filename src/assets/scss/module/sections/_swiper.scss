@@ -1,0 +1,25 @@
+@use "../setting" as *;
+@use "../mixin" as *;
+@use "../color" as *;
+@use "../variable" as *;
+
+.swiper {
+    background: url(#{$imgPath}reLpSp.jpg);
+}
+
+.swiper__card {
+    
+    padding: 20px;
+    b
+    h3 {
+        color: red;
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+}
+
+
+

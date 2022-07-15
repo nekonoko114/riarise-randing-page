@@ -7,7 +7,7 @@ require_once('./varidate.php');
     <div class="complete__wrapper inner">
         <div class="complete__card">
             <h3 class="complete__card__title">お問い合わせ</h3>
-            <p  class="complete__card__text">
+            <p class="complete__card__text">
                 お問い合わせありがとうございました。<br>
                 内容を確認のうえ、回答させて頂きます。<br>
                 しばらくお待ちください。
