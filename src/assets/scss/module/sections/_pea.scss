@@ -26,6 +26,14 @@
     background: #fff;
     padding: 20px;
     border-radius: 10px;
+    margin-bottom: 40px;
+    @include mq() {
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
   }
 
   &__content {
@@ -37,14 +45,55 @@
     @include mq() {
       margin-top: 3rem;
     }
-    
-    
   }
+
+  &__description {
+    width: 50%;
+    padding: 40px;
+
+    @include mq() {
+    width: 100%;
+    }
+    h3 {
+      margin-bottom: 10px;
+    }
+    &:nth-child(odd) {
+      background: rgba(255,255,0,0.1);
+    }
+
+    &:nth-child(2n) {
+      background: rgba(0,255,255,0.1);
+    }
+
+    p {
+
+    }
+    ul {
+      list-style:disc;
+      li {
+
+      }
+    }
+  }
+  
   &__img {
     width: calc($w100 / 2);
     text-align: center;
+    margin-top: 40px;
     img {
       width: 50%;
+    }
+  }
+
+  &__image {
+    width: 50%;
+    margin: 0 auto 40px;
+    @include mq() {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+    img {
+      
     }
   }
 }

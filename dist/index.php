@@ -16,8 +16,9 @@
   <meta name="description" content="若手の応援をモットーに掲げるリアライズ株式会社。第二の就職氷河期と言われている彼らに力添えを致します。">
   <meta name="fb:app:id" content="438366794832991">
   <meta name="twitter:card" content="summary_large_image">
-  <meta property="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="//unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" type="text/css" media="all" >
   <link rel="stylesheet" href="./assets/css/style.css" />
   <script src="https://kit.fontawesome.com/cd7cddf20f.js" crossorigin="anonymous"></script>
   <title>ランディングページ枠組み</title>
@@ -34,11 +35,11 @@
         <li><a href="#sec1">当社の特徴<i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
         <li><a href="#sec2">about<i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
         <li><a href="#sec3">紹介事例<i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
-        <li><a href="#sec4">流れ<i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
-        <li><a href="#sec5">process<i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
-        <li><a href="#sec6">転職者様の声<i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
-        <li><a href="#sec7">有料職業紹介について<i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
-        <li><a href="#sec8">面談担当者のコメント<i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+        <li><a href="#sec4">process<i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+        <li><a href="#sec5">流れ<i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+        <li><a href="#sec6">面談担当者のコメント<i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+        <li><a href="#sec7">転職者様の声<i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+        <li><a href="#sec8">有料職業紹介について<i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
         <li><a href="#sec9">Q&A<i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
         <li><a href="./contactmail/">お問い合わせ<i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
       </ul>
@@ -61,7 +62,7 @@
 
   <section class="forte section__area" id="sec1">
     <div class="forte__wrapper inner">
-      <h2 class="forte__title section__title">
+      <h2 class="forte__title section__title wow fadeInLeftBig">
         当社の強み<span>Forte</span>
       </h2>
       <div class="forte__textcontents">
@@ -96,13 +97,12 @@
 
 
 
-
 <!-- section -->
   <section class="section__area about" id="sec2">
     <div class="about__wrapper inner">
-      <h2 class="about__title section__title">概要<span>About</span></h2>
+      <h2 class="about__title section__title wow fadeInLeftBig">概要<span>About</span></h2>
       <div class="about__cards">
-        <div class="about__card">
+        <div class="about__card wow fadeInLeftBig" data-wow-duration=".6s">
           <img src="./assets/images/reLp04.jpg" alt="悩んでいるかた" />
           <h3 class="about__card__title">求職者</h3>
           <p class="about__card__text">
@@ -114,7 +114,7 @@
             求職者様、転職したい方は是非お問い合わせください。
           </p>
         </div>
-        <div class="about__card">
+        <div class="about__card wow fadeInLeftBig" data-wow-duration="1.2s">
           <img src="./assets/images/reLp06.jpg" alt="職業紹介のアドバイザー" />
           <h3 class="about__card__title">転職・正社員</h3>
           <p class="about__card__text">
@@ -123,7 +123,7 @@
             <span class="js-marker">弊社にお問い合わせいただければ現在のキャリアを生かしキャリア転職を行うことも可能</span>となりますので、なにか御座いましたらご連絡くださいませ。
           </p>
         </div>
-        <div class="about__card">
+        <div class="about__card wow fadeInLeftBig" data-wow-duration="1.5s">
           <img src="./assets/images/reLpflow01.jpg" alt="正社員への道を掴んだ男性" />
           <h3 class="about__card__title">キャリア転職 正社員</h3>
           <p class="about__card__text">
@@ -143,11 +143,11 @@
 <!-- section -->
   <section class="section__area illustration" id="sec3">
     <div class="illustration__wrapper inner">
-      <h2 class="illustration__title section__title">
+      <h2 class="illustration__title section__title wow fadeInRightBig">
         紹介事例<span>Case</span>
       </h2>
       <div class="illustration__cards">
-        <div class="illustration__card">
+        <div class="illustration__card wow fadeInRightBig" data-wow-duration=".6s">
           <img src="./assets/images/reLp10.jpg" alt="エンジニアの求人" />
           <h3 class="illustration__card__title">
             未経験さん大歓迎!年間休日120日以上!ITエンジニア大募集!!
@@ -167,7 +167,7 @@
             <li><span>32歳未満（長期継続によるキャリア形成のため)</span></li>
           </ul>
         </div>
-        <div class="illustration__card">
+        <div class="illustration__card wow fadeInRightBig" data-wow-duration=".9s">
           <img src="./assets/images/reLp08.jpg" alt="買取スタッフの求人" />
           <h3 class="illustration__card__title">
             【関西】90%が未経験スタート!残業平均6時間!買取スタッフ募集中!!
@@ -188,10 +188,10 @@
             </li>
           </ul>
         </div>
-        <div class="illustration__card">
+        <div class="illustration__card wow fadeInRightBig" data-wow-duration="1.5s">
           <img src="./assets/images/reLp14.jpg" alt="営業・企画担当の求人" />
           <h3 class="illustration__card__title">
-            [有料職業紹介要員]営業/企画営業（法人対象）
+            [職業紹介要員]営業/企画営業（法人対象）
             【大阪】未経験さん大歓迎 年間休日120日以上リゾート地人材営業大募集
           </h3>
           <p class="illustration__card__text">
@@ -218,7 +218,7 @@
 <!-- section -->
   <section class="section__area process" id="sec4">
     <div class="process__wrapper inner">
-      <h2 class="process__title section__title">
+      <h2 class="process__title section__title wow fadeIn">
         プロセス<span>Process</span>
       </h2>
       <div class="process__head">
@@ -241,7 +241,7 @@
 <!-- section -->
   <section class="section__area flow" id="sec5">
     <div class="flow__wrapper inner">
-      <h2 class="flow__title section__title">流れ<span>Flow</span></h2>
+      <h2 class="flow__title section__title wow fadeInLeftBig">流れ<span>Flow</span></h2>
       <ul class="flow__lists">
         <li class="flow__list">
           <a href="#flow1">①面接練習担当との打合せ</a>
@@ -265,7 +265,7 @@
         <i class="fas fa-arrow-down"></i>
       </ul>
       <div class="flow__content">
-        <dl class="flow__dl flow__dl--n1" id="flow1">
+        <dl class="flow__dl flow__dl--n1 wow fadeInLeftBig" data-wow-duration="1s" id="flow1">
           <dt>
             <img src="./assets/images/reLpflow02.jpg" alt="楽しそうに話をする担当者と求職者の方" />
           </dt>
@@ -283,7 +283,7 @@
             </p>
           </dd>
         </dl>
-        <dl class="flow__dl flow__dl--n2" id="flow2">
+        <dl class="flow__dl flow__dl--n2 wow fadeInLeftBig" data-wow-duration="1.3s" id="flow2">
           <dt>
             <img src="./assets/images/reLpflow03.jpg" alt="希望者と希望の話し合い" />
           </dt>
@@ -300,7 +300,7 @@
             </p>
           </dd>
         </dl>
-        <dl class="flow__dl flow__dl--n3" id="flow3">
+        <dl class="flow__dl flow__dl--n3 wow fadeInLeftBig" data-wow-duration="1.5s" id="flow3">
           <dt>
             <img src="./assets/images/reLpflow05.jpg" alt="履歴書、職務経歴書作成代行" />
           </dt>
@@ -317,7 +317,7 @@
             </p>
           </dd>
         </dl>
-        <dl class="flow__dl flow__dl--n4" id="flow4">
+        <dl class="flow__dl flow__dl--n4 wow fadeInLeftBig" data-wow-duration="1.5s" id="flow4">
           <dt>
             <img src="./assets/images/reLpflow01.jpg" alt="事前対策" />
           </dt>
@@ -338,7 +338,7 @@
             </p>
           </dd>
         </dl>
-        <dl class="flow__dl flow__dl--n5" id="flow5">
+        <dl class="flow__dl flow__dl--n5 wow fadeInLeftBig" data-wow-duration="1.5s" id="flow5">
           <dt>
             <img src="./assets/images/reLpflow04.jpg" alt="当日面接" />
           </dt>
@@ -362,17 +362,17 @@
 <!-- section -->
   <section class="section__area dvisor" id="sec6">
     <div class="dvisor__wrapper inner">
-      <h2 class="dvisor__title section__title">
+      <h2 class="dvisor__title section__title wow fadeInLeftBig">
         アドバイザー<span>Advisor</span>
       </h2>
       <div class="dvisor__content">
-        <div class="dvisor__item dvisor__item--bgc">
+        <div class="dvisor__item dvisor__item--bgc wow fadeInLeftBig" data-wow-duration="1,5s">
           <h3 class="dvisor__name">担当者 : 前原京典</h3>
           <div class="dvisor__img">
             <img src="./assets/images/representative/reLpMaehara02.jpg" alt="専任のアドバイザー" />
           </div>
         </div>
-        <div class="dvisor__item">
+        <div class="dvisor__item wow fadeInLeftBig" data-wow-duration="1.5s">
           <p class="dvisor__text">
             初めまして
             リアライズ株式会社キャリアアドバイザーの前原でございます。
@@ -406,12 +406,12 @@
 <!-- section -->
   <section class="section__area jobchnger" id="sec7">
     <div class="jobchnger__wrapper inner">
-      <h2 class="jobchnger__title section__title">
+      <h2 class="jobchnger__title section__title wow fadeInRightBig">
         利用者の声
         <span></span>
       </h2>
       <div class="jobchnger__content">
-        <div class="jobchnger__textbox">
+        <div class="jobchnger__textbox wow fadeInRightBig" data-wow-duration=".6s">
           <img src="./assets/images/items/item-human.png" alt="利用者の声">
           <h3 class="jobchnger__subtitle">面接対策が的確だった</h3>
           <p>
@@ -423,7 +423,7 @@
             <span class="js-marker">そんな私でもリラックスして面接の場でも和やかな雰囲気で乗り越えることが出来ました。</span>
           </p>
         </div>
-        <div class="jobchnger__textbox">
+        <div class="jobchnger__textbox wow fadeInRightBig" data-wow-duration=".9s">
           <img src="./assets/images/items/item-human.png" alt="利用者の声">
           <h3 class="jobchnger__subtitle">希望職種で内定を貰えた</h3>
           <p>
@@ -439,7 +439,7 @@
             ここまで早く決まらなかったのでとても感謝しています。
           </p>
         </div>
-        <div class="jobchnger__textbox">
+        <div class="jobchnger__textbox wow fadeInRightBig" data-wow-duration="1,5s">
           <img src="./assets/images/items/item-human.png" alt="利用者の声">
           <h3 class="jobchnger__subtitle">
             今後の私の先を見据えてくれていた
@@ -463,21 +463,62 @@
 <!-- section -->
   <section class="section__area pea" id="sec8">
     <div class="pea__wrapper inner">
-      <h2 class="pea__titile section__title">
+      <h2 class="pea__titile section__title wow fadeInLeftBig">
         有料職業紹介について<span>Introduction</span>
       </h2>
       <div class="pea__text">
         <p>
-          有料職業紹介とは、転職を考えている求職者の希望に沿った求人を紹介をしているサービスです。
-          一般的に「人材紹介」、「転職エージェント」などと呼ばれています。探せる仕事は、一般職や営業職、クリエイターやエンジニアなど多岐にわたります。
-          求職者は無料で利用することができます。
-        </p> 
+          有料職業紹介とは、転職を考えている求職者の希望に沿った求人を紹介をしているサービスです。</p>
+          <p>
+            一般的に「人材紹介」、「転職エージェント」などと呼ばれています。探せる仕事は、一般職や営業職、クリエイターやエンジニアなど多岐にわたります。
+          </p> 
+          <p>
+            求職者は無料で利用することができます。
+          </p>
         <p>
           人材が集まりにくい企業がうまく活用することによって、社内の人手不足を解消することができます。人材紹介のプロがお客さまの会社の生産性を高めるべく立ち上がり、面倒な部分や社内でも苦手部分に対して訴えかけると思って頂いて大丈夫です。
+        </p>
+        <p>
           数々の転職を成功させてきたプロにぜひお任せください。
         </p>
       </div>
-      <div class="pea__content">
+      <div class="pea__image">
+        <img src="./assets/images/items/reLpPAimages.png" alt="有料職業紹介証明書2" />
+      </div>
+
+      <div class="pea__content">      
+        <div class="pea__description">
+          <h3>①求職者は無料で利用できる</h3>
+          <ul>
+            <li>Ｑ＆Ａにもありますが有料職業紹介では、求職者側から手数料はいただきません</li>
+            <li>求職者様側から手数料を受け取ることは、法律で禁止されている為、弊社ではコンプライアンスを遵守し運営しております</li>
+          </ul>
+        </div>
+        <div class="pea__description">
+          <h3>②有料職業紹介を使うメリット</h3>
+           <ul>
+            <li>直接雇用で正社員または契約社員の求人が通常の転職サイトより多い</li>
+            <li>求人広告を掲載していない企業の求人に出会える</li>
+            <li>転職活動のプロであるコンサルタントの目から見た、自分に合った企業を紹介してもらえる</li>
+            <li>コンサルタントに履歴書や面接についてのアドバイスをもらえる</li>
+           </ul> 
+
+        </div>
+        <div class="pea__description">
+          <h3>③こんな人におすすめ</h3>
+          <ul>
+            <li>直接雇用で働きたい人</li>
+            <li>コンサルタントのサポートを受けながら転職活動をしたい人</li>
+            <li>自分の希望に合うのはどんな企業なのかイメージが湧かない人</li>
+            <li>求人を探す手間を省きたい人</li>
+           </ul> 
+        </div>
+        <div class="pea__description">
+          <h3>④よく間違えられる有料職業紹介と人材派遣</h3>
+          <p>有料職業紹介と人材派遣は、混同されやすいですがまったく別のサービスです。</p>
+          <p>有料職業紹介は求職者と企業の採用を支援するサービスで、求職者は採用になった場合、その企業の社員として直接雇用されます。</p> 
+          <p>それに対し人材派遣は、人材派遣会社（派遣元）に登録した人が、求人募集をしている企業に派遣されるサービス。派遣会社に登録した人は、派遣先企業の指示を受けて働きますが、雇い主はあくまでも人材派遣会社（派遣元）で給料も派遣元から支払われます。</p>
+        </div>
         <div class="pea__img">
           <img src="./assets/images/reLpYusyoku01.jpeg" alt="有料職業紹介証明書1" />
         </div>
@@ -485,13 +526,13 @@
           <img src="./assets/images/reLpYusyoku02.jpeg" alt="有料職業紹介証明書2" />
         </div>
       </div>
+      
       <div class="contact__btn">
         <a class="contact__link" href="./contact.php">問い合わせる</a>
       </div>
     </div>
   </section>
   <!-- /section -->
-
   
 
   <!-- Slider main container -->
@@ -634,7 +675,7 @@
 <!-- section -->
   <section class="section__area qa" id="sec9">
     <div class="qa__wrapper inner">
-      <h2 class="qa__title section__title">Q&A<span>Help</span></h2>
+      <h2 class="qa__title section__title wow rollIn">Q&A<span>Help</span></h2>
       <dl class="qa__lists">
         <dt class="qa js-qa">有料職業紹介てなに？<span class="active"></span></dt>
         <dd class="is-active">
@@ -645,7 +686,7 @@
         <dt class="qa js-qa">料金は発生するのですか？？<span></span></dt>
         <dd>
           求職者様へのお仕事紹介で料金が発生することはなく無料でご利用いただけます。
-          採用決定後も　料金を請求することはございません。
+          採用決定後も料金を請求することはございません。
         </dd>
       </dl>
       <dl class="qa__lists">
@@ -699,10 +740,11 @@
     </ul>
     <p class="copyright">&copy;Rearise - Company .LTD -リアライズ株式会社-</p>
   </footer>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="//unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="./assets/js/swiper.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script> wow = new WOW().init(); </script>
   <script src="./assets/js/base.js"></script>
 </body>
 
