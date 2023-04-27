@@ -43,6 +43,7 @@
   
 
     p {
+      font-size: 2.4rem;
       @include mq() {
         
       }
@@ -55,9 +56,17 @@
   &__name {
     margin-bottom: 16px;
     text-align: center;
+    font-size: 3rem;
     @include mq() {
-      font-size: 1rem;
+      font-size: 2rem;
       margin-top: 20px;
+    }
+  }
+
+  &__text {
+
+    &__bold {
+      font-weight: bold;
     }
   }
   
@@ -69,6 +78,8 @@
       box-shadow: 0 3px 6px #7e7e7e7e;
       vertical-align: middle;
       transform: scale(-1, 1); //左右反転
+      width: 100%;
+      height: auto;
     }
   }
 }

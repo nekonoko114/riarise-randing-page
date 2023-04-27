@@ -115,7 +115,7 @@ ol {
   @include mq("tab") {
   }
   @include mq() {
-    font-size: 2.4rem;
+    font-size: 3.2rem;
     margin-bottom: 30px;
     margin-top: 32px;
     padding-bottom: 30px;
@@ -126,13 +126,10 @@ ol {
   padding: 100px 0;
   background: orange;
   &:nth-child(2n + 1) {
-    background: url(#{$imgPath}reLpbg05.jpg) no-repeat center center / cover;
-    
-
-    
+    background: url(#{$imgPath}reLpbg05.webp) no-repeat center center / cover;    
   }
   &:nth-child(2n) {
-    background: url(#{$imgPath}reLpbg10.jpg) no-repeat center center / cover;
+    background: url(#{$imgPath}reLpbg10.webp) no-repeat center center / cover;
     clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 97%);
   @include mq() {
     clip-path: polygon(0 0, 100% 0.8%, 100% 100%, 0 100%);

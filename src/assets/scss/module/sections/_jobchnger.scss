@@ -44,16 +44,21 @@
 
     p {
       padding-bottom: 20px;
+      font-size: 2.8rem;
+
+      @include mq() {
+        font-size: 2.0rem;
+      }
     }
   }
   &__subtitle {
-    font-size: 2.4rem;
+    font-size: 3.2rem;
     margin-bottom: 20px;
     background: $color-bg-base;
     border-radius: 0 999px 0 0;
 
     @include mq() {
-      font-size: 1.6rem;
+      font-size: 2.4rem;
     }
   }
 }

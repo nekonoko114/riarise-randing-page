@@ -20,6 +20,7 @@
   }
 
   &__title {
+    
   }
 
   &__lists {
@@ -33,6 +34,7 @@
     }
   }
   &__list {
+    font-size: 2.0rem;
     a {
       display: inline-block;
       padding: 4px 2px;
@@ -83,7 +85,7 @@
     }
     &:nth-of-type(2n) {
       flex-direction: row-reverse;
-      background: url(#{$imgPath}reLpbg05.jpg) no-repeat center center / cover;
+      background: url(#{$imgPath}reLpbg05.web) no-repeat center center / cover;
       @include mq("tab") {
         flex-direction: column;
       }
@@ -92,12 +94,13 @@
       }
     }
     &:nth-of-type(2n + 1) {
-      background: url(#{$imgPath}reLpbg08.jpg) no-repeat center center / cover;
+      background: url(#{$imgPath}reLpbg08.web) no-repeat center center / cover;
     }
     dt {
       width: 40%;
       img {
         width: 100%;
+        height: auto;
         vertical-align: middle;
       }
       @include mq() {

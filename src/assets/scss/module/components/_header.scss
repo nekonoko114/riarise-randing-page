@@ -133,61 +133,42 @@
   }
 
   &__text {
-    font-size: 3.2rem;
+    font-size: 6.4rem;
     font-weight: bold;
+    background: rgba(255,255,255,0.6);
+    padding: 4px 12px;
+    border-radius: 10px;
     @include mq("tab") {
-      font-size: 1.8rem;
+      font-size: 2.4rem;
     }
 
     @include mq() {
-      font-size: 1rem;
+      font-size: 1.6rem;
     }
     &-up {
       // color: #fff;
       position: absolute;
       top: 25%;
       left: 20px;
-      transform: translateX(-10%);
       z-index: 12;
-      animation: top-text-up 2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-      @keyframes top-text-up {
-        0% {
-          letter-spacing: -0.5em;
-          transform: translateZ(-700px) translateY(-500px);
-          opacity: 0;
-        }
-        40% {
-          opacity: 0.6;
-        }
-        100% {
-          transform: translateZ(0) translateY(0);
-          opacity: 1;
-        }
+
+      @include mq() {
+      top: 50%;
+      left: 20px;
       }
     }
 
     &-down {
-      // color: #fff;
       position: absolute;
       left: 20px;
-      top: 50%;
-      transform: translateX(-10%);
+      bottom:40%;
       z-index: 12;
-      animation: top-text-down 2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-      @keyframes top-text-down {
-        0% {
-          letter-spacing: 1em;
-          transform: translateZ(400px) translateY(300px);
-          opacity: 0;
+
+      @include mq() {
+        left: 20px;
+        bottom:10%;
+        
         }
-        40% {
-          opacity: 0.6;
-        }
-        100% {
-          transform: translateZ(0) translateY(0);
-          opacity: 1;
-        }
-      }
     }
   }
 
